@@ -1,0 +1,147 @@
+/* @font-face {
+  font-family: 'SF Pro Text Regular';
+  src: url('../font-family/SF-Pro-Text-Regular.otf') format('opentype');
+}
+
+body {
+  font-family: 'SF Pro Text Regular';
+} */
+/*body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+*/
+@font-face {
+  font-family: "SFUIDisplayCondensed Semibold";
+  src: url("../font-family/SFUIDisplayCondensed-Semibold.otf")
+    format("opentype");
+}
+.loading_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*  justify-content: center;*/
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: #ffffff;
+  opacity: 1;
+  z-index: 1001;
+}
+
+.loading_box {
+  width: 100%;
+  margin-bottom: 100px;
+  height: 100vh;
+}
+.loading_box img {
+  /*  margin-top: 100px;*/
+  /*  margin-bottom: 100px;*/
+  padding: 100px 160px 148px 160px;
+  /*    padding: 100px 160px 70px 160px;*/
+  width: 100%;
+  height: 100%;
+}
+.loading-text {
+  width: 33px !important;
+  font-size: 30px;
+  color: #57575c;
+  font-weight: bold;
+  text-wrap: nowrap;
+  margin-right: 3px;
+  margin-left: 3px;
+  font-family: "SFUIDisplayCondensed Semibold";
+}
+.loading-text-1 {
+  width: 100px !important;
+  font-size: 30px;
+  color: #57575c;
+  font-weight: bold;
+  text-wrap: nowrap;
+  font-family: "SFUIDisplayCondensed Semibold";
+}
+.loading-text-3 {
+  width: 20px !important;
+  font-size: 30px;
+  color: #57575c;
+  font-weight: bold;
+  text-wrap: nowrap;
+  font-family: "SFUIDisplayCondensed Semibold";
+}
+.mobile_loading-text {
+  font-family: "SFUIDisplayCondensed Semibold";
+}
+
+.progress-bar {
+  width: 100%;
+  height: 5px;
+  background-color: #e3e3e3;
+  margin: 55px 15px 55px 0px;
+}
+
+.progress-bar-inner {
+  width: 0;
+  height: 100%;
+  background-color: #555555;
+}
+
+.complete-progress {
+  display: flex;
+  align-items: center;
+  width: 100% !important;
+  position: sticky;
+  bottom: 0px;
+  margin-top: 70px;
+  padding: 0 30px;
+}
+@media screen and (max-width: 1645px) {
+  .complete-progress {
+    /*    justify-content: center !important;*/
+  }
+
+  .progress-bar {
+    width: 86%;
+  }
+}
+/*@media screen and (min-width: 1600px) {
+  .loading_box img {
+    margin-top: 100px;
+    padding: 0px 160px 70px 160px !important;
+    width: 100%;
+  }
+}*/
+
+@media screen and (max-width: 1215px) {
+  .progress-bar {
+    width: 83%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .progress-bar {
+    width: 79%;
+  }
+}
+/*@media screen and (max-height: 650px) {
+  .loading_container {
+    height: 650px;
+    overflow: auto;
+    position: unset;
+  }
+  .loading_box {
+    overflow: hidden;
+    height: 100%;
+    margin-bottom: 0px;
+  }
+  .loading_box img {
+    padding: 100px 0 0 0;
+  }
+  .complete-progress {
+    margin-top: 30px;
+  }
+}
+*/
